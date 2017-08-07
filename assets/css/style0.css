@@ -1,0 +1,298 @@
+
+
+/*        Navbar        */
+
+nav {
+  max-width: 1024px;
+  margin: 0 auto;
+  box-shadow: 5px 5px 5px #888888;
+  margin-bottom: 50px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: teal;
+    color: black;
+}
+
+/*      Bootstrap overrides     */
+
+* {
+  border-radius: 0 !important;
+}
+
+.navbar-default {
+  color: white;
+  background-color: #333;
+  border: none;
+  margin-bottom: 24px;
+}
+
+.navbar-default .navbar-brand {
+  color: white;
+  background-color: teal;
+  border-color: black;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: white;
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+  background-color: teal;
+  color: white;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+  background-color: black;
+  color: white;
+}
+
+/*        Main Style        */
+
+html {
+  height: 100%;
+}
+
+body {
+  background-image: url("../images/whirlpool.png");
+  font-family: monospace;
+  height: 100%;
+  display: block;
+}
+
+main {
+  max-width: 1024px;
+  margin: 0 auto;
+  /*margin-bottom: 48px;*/
+  padding-bottom: 80px;
+  /*height: 100%;*/
+}
+
+h1 {
+  font-size: 22px;
+  -webkit-margin-before: 0.67em;
+  -webkit-margin-after: 0.67em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  font-weight: bold;
+}
+
+
+h2 {
+  display: block;
+  font-size: 18px;
+  -webkit-margin-before: 0.83em;
+  -webkit-margin-after: 0.83em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 16px;
+  line-height: 16px;
+  padding: 0px;
+  margin: 12px 0;
+}
+
+hr {
+  color: black;
+  border-color: black;
+  border-style: inset;
+  margin: 12px 0;
+}
+
+footer {
+  color: white;
+  background: #333;
+  font-family: monospace;
+  position: relative;
+  bottom: -12px;
+  max-width: 1024px;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 48px;
+  text-align: center;
+  border-top: thick solid teal;
+  box-shadow: 5px 5px 5px #888888;*/
+}
+
+/*        Left Hand Content Style       */
+
+
+#about, #contact, #portfolio, #connect{
+  background: #eaeaea;
+  padding: 1px 16px 16px 16px;
+  box-shadow: 5px 5px 5px #888888;
+  margin-top: 16px;
+}
+
+#portfolio img {
+  /*float: left;
+  height: 200px;
+  width: 200px;*/
+  padding: 16px 16px 16px 16px;
+
+}
+
+/*#about img {
+  max-width: 200px;
+}*/
+
+/*#about img {
+  display: block;
+  float: none;
+  float: left;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 16px 0;
+  width: 200px;
+}*/
+
+.thumb {
+  min-width: 50px;
+}
+
+/*        Email Form        */
+
+.contact-form {
+  display: block;
+  max-width: 100%;
+  min-height: 350px;
+  width: 732px;
+  padding: 16px;
+}
+
+
+#name, #email{
+  max-width: 500px;*/
+  display: block;
+  display: inline-block;*/
+  width: 70%;
+}
+
+label {
+  display: flex;
+  display: inline-block;
+  display: block;
+}
+
+#message {
+  width: 100%;
+  height: 200px;
+}
+
+textarea, input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.btn {
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 16px;
+  background: teal;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: none;
+  box-shadow: 5px 5px 5px #888888;
+}
+
+.btn:hover {
+  background: #333;
+  text-decoration: none;
+}
+
+/*        Right Hand Links        */
+
+ #connect a {
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 14px 8px;
+   text-decoration: none;
+   background: #666;
+   border-bottom: thin solid white;
+ }
+
+ #connect a:hover:not(.active) {
+   background-color: #111;
+ }
+
+/*        Media Queries -- Disabled to only use Bootstrap      */
+
+
+
+@media screen and (max-width: 768px) {
+
+  #about img {
+    display: block;
+    float: none;
+  }
+
+  #portfolio img {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+}
+
+@media screen and (max-width: 580px) {
+
+  main {
+    position: relative;
+    display: block;
+  }
+
+  #about img {
+    display: block;
+    float: none;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 16px 0;
+  }
+
+  #about, #contact, #portfolio{
+    padding-top: 8px;
+    display: block;
+    margin: 0 auto;
+  }
+
+   #connect {
+    display: block;
+    padding-top: 8px;
+    margin: 16px auto;
+
+  }
+}

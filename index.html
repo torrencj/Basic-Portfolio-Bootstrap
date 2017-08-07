@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <head>
+      <meta charset="utf-8">
+      <title>John Torrence</title>
+      <link rel="stylesheet" href="assets/css/reset.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/css/style0.css">
+
+<!-- Required JS for bootstrap -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+      <!-- Show only the requested elements -->
+      <script>
+        function show(id) {
+          x = document.getElementsByTagName('section')
+          console.log(x.length);
+          for (var i = 0; i < x.length; i++) {
+            x[i].style.display = 'none'
+          }
+          document.getElementById(id).style.display = 'block';
+        }
+      </script>
+
+    </head>
+  </head>
+
+  <body>
+  <!-- Example navbar from getbootstrap.com -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" style="visibility:hidden"href="#"></a>
+
+        <a class="navbar-brand" href="#">John</a>
+
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" onclick="show('about-hide'); return false;" >About</a></li>
+          <li><a href="#" onclick="show('contact-hide'); return false;" >Contact</a></li>
+          <li><a href="#" onclick="show('portfolio-hide'); return false;" >Portfolio</a></li>
+
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <main>
+
+    <div class="container" style="max-width:1024px">
+      <div class="row">
+
+          <section style="display:block" class="col-xs-12 col-sm-9" id="about-hide">
+            <div id="about">
+              <h1>About me</h1>
+              <hr>
+              <div class="container-fluid">
+                <div class="row">
+
+                  <div class="col-md-3 col-sm-12 col-xs-12">
+                    <img class="img-responsive" src="assets/images/myphoto.jpg" alt="Photo of the author on a good day.">
+                  </div>
+
+                  <div class="col-md-9 col-sm-12 col-xs-12">
+                    <p>Hey, I'm John,</p>
+                    <p>I'm a native Austinite. I love to hike, travel, and hike while traveling! I also love to take photos, but I don't have a place to share those yet. I spent the last decade or so studying Phyics and working in the semiconductor industry at Intel.</p>
+
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+          </section>
+
+        <section style="display:none" id="contact-hide" class="col-xs-12 col-sm-9">
+          <div id="contact">
+            <h1>Get in Touch:</h1>
+            <hr>
+            <form class="contact-form" action="index.html" method="post">
+
+              <label>Name</label>
+              <input type="text" id="name" placeholder="John Smith">
+
+              <label>Email</label>
+              <input type="text" id="email" placeholder="example@gmail.com">
+
+              <label>Your Message</label>
+              <textarea type="text" id="message" placeholder=""></textarea>
+
+              <input class="btn" type="submit" value="Submit">
+
+            </form>
+
+          </div>
+        </section>
+
+        <section style="display:none" id="portfolio-hide" class="col-xs-12 col-sm-9">
+          <div id="portfolio">
+            <h1>My Portfolio:</h1>
+            <hr>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                  <img src="http://via.placeholder.com/200x200" alt="" class="img-responsive">
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                  <img src="http://via.placeholder.com/200x200" alt="" class="img-responsive">
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                  <img src="http://via.placeholder.com/200x200" alt="" class="img-responsive">
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                  <img src="http://via.placeholder.com/200x200" alt="" class="img-responsive">
+                </div>
+
+                </div>
+              </div>
+
+            </div>
+        </section>
+
+        <div class="col-xs-12 col-sm-3">
+            <aside id="connect">
+              <h2>Connect:</h2>
+              <hr>
+              <a href="#">Github</a>
+              <a href="#">Linkedin</a>
+              <a href="#">Stackoverflow</a>
+            </aside>
+        </div>
+
+      </div>
+<div class="row footer">
+  <footer class="footer">
+     <div class="container">
+      <span>JTT &copy 2017</span>
+     </div>
+  </footer>
+</div>
+    </div>
+
+  </main>
+
+<!-- <div class="" style="height:300px"> -->
+
+</div>
+
+  <!-- <footer class="footer">
+     <div class="container">
+      <span>JTT &copy 2017</span>
+     </div>
+  </footer> -->
+
+  </body>
+
+
+
+</html>

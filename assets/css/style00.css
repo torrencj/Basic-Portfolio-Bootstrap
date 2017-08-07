@@ -1,0 +1,116 @@
+* {
+  border-radius: 0 !important;
+}
+
+
+/*        Navbar        */
+
+nav {
+  max-width: 1024px;
+  margin: 0 auto;
+  box-shadow: 5px 5px 5px #888888;
+  margin-bottom: 50px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: teal;
+    color: black;
+}
+
+/*      Bootstrap overrides     */
+
+.navbar-default {
+  color: white;
+  background-color: #333;
+  border: none;
+  margin-bottom: 50px;
+}
+
+.navbar-default .navbar-brand {
+  color: white;
+  background-color: teal;
+  border-color: black;
+}
+
+a.navbar-brand {
+  margin-left: 30%;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: white;
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+  background-color: teal;
+  color: white;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+  background-color: black;
+  color: white;
+}
+
+body {
+  background-image: url("../images/whirlpool.png");
+  font-family: monospace;
+  /*position: relative;*/
+}
+
+#about, #contact, #portfolio{
+  /*min-width: 200px;
+  max-width: 70%;
+  display: flex;*/
+  background: #eaeaea;
+  /*padding: 0px 16px 16px 16px;*/
+  box-shadow: 5px 5px 5px #888888;
+  /*margin-left: 48px;*/*/
+
+}
+
+
+#connect {
+  /*max-height: 174px;*/
+  /*display: inline-block;*/
+  background: #eaeaea;
+  /*padding: 0 20px 20px 20px;*/
+  /*margin: 0 48px 0px 48px;*/
+  box-shadow: 5px 5px 5px #888888;
+}
+
+ #connect a {
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   background: #666;
+   border-bottom: thin solid white;
+ }
+
+ #connect a:hover:not(.active) {
+   background-color: #111;
+ }

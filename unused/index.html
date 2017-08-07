@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <head>
+      <meta charset="utf-8">
+      <title>John Torrence</title>
+      <link rel="stylesheet" href="assets/css/reset.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/css/style.css">
+
+      <!-- Show only the requested elements -->
+      <script>
+        function show(id) {
+          x = document.getElementsByTagName('section')
+          console.log(x.length);
+          for (var i = 0; i < x.length; i++) {
+            x[i].style.display = 'none'
+          }
+          document.getElementById(id).style.display = '';
+        }
+      </script>
+
+    </head>
+  </head>
+
+  <body>
+
+  <!-- Example navbar from getbootstrap.com -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">John</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" onclick="show('about'); return false;" >About</a></li>
+          <li><a href="#" onclick="show('contact'); return false;" >Contact</a></li>
+          <li><a href="#" onclick="show('portfolio'); return false;" >Portfolio</a></li>
+
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+
+    <main>
+
+      <section id="about">
+        <div class="container">
+          <h1>About me</h1>
+          <hr>
+          <img class="img-responsive" src="assets/images/myphoto.jpg" alt="Photo of the author on a good day.">
+
+          <!-- <figure>
+            <img src="assets/images/myphoto.jpg" alt="Photo of the author on a good day.">
+            <figcaption>Fig 1. The author on Mackinnon Pass, along the Milford Track.</figcaption>
+          </figure> -->
+
+          <p>Hey, I'm John,</p>
+          <p>I'm a native Austinite. I love to hike, travel, and hike while traveling! I also love to take photos, but I don't have a place to share those yet. I spent the last decade or so studying Phyics and working in the semiconductor industry at Intel.</p>
+
+        </div>
+      </section>
+
+      <section style="display: none" id="contact">
+
+        <div class="container">
+          <h1>Get in Touch:</h1>
+          <hr>
+          <form class="contact-form" action="index.html" method="post">
+
+            <label>Name</label>
+            <input type="text" id="name" placeholder="John Smith">
+
+            <label>Email</label>
+            <input type="text" id="email" placeholder="example@gmail.com">
+
+            <label>Your Message</label>
+            <textarea type="text" id="message" placeholder=""></textarea>
+
+            <input class="btn" type="submit" value="Submit">
+
+          </form>
+
+        </div>
+      </section>
+
+      <section style="display: none" id="portfolio">
+        <h1>My Portfolio:</h1>
+        <hr>
+        <div class="img-container">
+          <img src="http://via.placeholder.com/200x200" alt="">
+          <img src="http://via.placeholder.com/200x200" alt="">
+          <img src="http://via.placeholder.com/200x200" alt="">
+          <img src="http://via.placeholder.com/200x200" alt="">
+          <img src="http://via.placeholder.com/200x200" alt="">
+          <img src="http://via.placeholder.com/200x200" alt="">
+        </div>
+      </section>
+
+      <aside id="connect">
+        <h2>Connect:</h2>
+        <hr>
+        <a href="#">Github</a>
+        <a href="#">Linkedin</a>
+        <a href="#">Stackoverflow</a>
+      </aside>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <span>JTT &copy 2017</span>
+      </div>
+    </footer>
+
+  </body>
+</html>

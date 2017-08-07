@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>toggles</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="/Users/john/bootcamp/Basic-Portfolio-Bootstrap/assets/css/style.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <script>
+      function showStuff(id) {
+
+        // document.getElementById('contact').style.display = ''; .style.display = 'none';
+        x = document.getElementsByTagName('section')
+        console.log(x.length);
+        for (var i = 0; i < x.length; i++) {
+          x[i].style.display = 'none'
+        }
+        document.getElementById(id).style.display = '';
+
+      }
+    </script>
+
+  </head>
+
+
+
+  <body>
+    <!-- <a href="#" onclick="showStuff('about'); return false;">About</a> -->
+
+      <nav>
+
+        <ul>
+          <li style="margin-left: 15%"><a class="active" href="#">John</a></li>
+          <li style="float:right"><a href="#" onclick="showStuff('portfolio'); return false;" >Portfolio</a></li>
+          <li style="float:right"><a href="#" onclick="showStuff('contact'); return false;" >Contact</a></li>
+          <li style="float:right"><a href="#" onclick="showStuff('about'); return false;" >About</a></li>
+
+        </ul>
+      </nav>
+
+      <main>
+
+        <section id="about">
+          <div class="container">
+            <h1>About me</h1>
+            <hr>
+
+            <p>Hey, I'm John,</p>
+            <p>I'm a native Austinite. I love to hike, travel, and hike while traveling! I also love to take photos, but I don't have a place to share those yet. I spent the last decade or so studying Phyics and working in the semiconductor industry at Intel.</p>
+
+          </div>
+        </section>
+
+        <section id="contact">
+
+          <h1>get in touch:</h1>
+        </section>
+
+        <section id="portfolio">
+          <h1>My Portfolio:</h1>
+
+        </section>
+
+        <aside id="connect">
+          <h2>Connect:</h2>
+          <hr>
+          <a href="#">Github</a>
+          <a href="#">Linkedin</a>
+          <a href="#">Stackoverflow</a>
+        </aside>
+
+      </main>
+
+      <footer> JTT &copy 2017</footer>
+
+  </body>
+</html>
